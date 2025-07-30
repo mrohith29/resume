@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Rohith Mariyala} \\ \vspace{1pt}
+    \small +91 9502409219 $|$ \href{mailto:mariyalarohith29@gmail.com}{\underline{mariyalarohith29@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/mariyala-rohith/}{\underline{linkedin.com/in/mariyala-rohith}} $|$
+    \href{https://github.com/mrohith29}{\underline{github.com/mrohith29}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+  Computer Science and Engineering student with experience in \textbf{software development}, specializing in \textbf{AI-powered and full-stack} applications. Proficient in Python, JavaScript, FastAPI, and React, with strong \textbf{DevOps and cloud deployment} skills. Skilled at building secure, scalable solutions with real-world impact. Passionate about solving complex problems, working in agile teams, and delivering data-driven, user-focused products.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gokaraju Rangaraju Institute of Engineering and Technology}{Hyderabad, IN}
+      {Bachelor of Computer Science and Engineering - 8.96 CGPA}{Nov. 2022 -- Present}
+    \resumeSubheading
+      {Sri Sanjeevni Junior College}{Hyderabad, IN}
+      {Math, Physics, Chemistry - 94\% score}{Jun. 2020 -- Jul 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer Intern}{Mar 2024 -- Dec 2024}
+      {Orchestration Syndicate}{TX, USA (Remote)}
+      \resumeItemListStart
+        \resumeItem{Contributed to the development of the company's core product framework and led the build of its flagship demo
+product, \textbf{Climb}, using a custom in-house tech stack.}
+        \resumeItem{Co-designed and engineered an AI product leveraging \textbf{Apple ML-4M}, building a scalable machine learning pipeline
+capable of real-time data processing.}
+        \resumeItem{Improved system security and performance by integrating \textbf{OIDC}-based authentication and optimizing feature
+classes, resulting in a reduction in login latency.}
+        % \resumeItem{Played a key role in delivering \$10,000+ in individual revenue, demonstrating \textbf{technical ownership} and \textbf{product
+% impact}.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+          {\textbf{PolicyChat AI} $-$ \emph{Python, FastAPI, React, PostgreSQL, Docker, GCloud, AWS}}{}
+          {\href{https://crispterms.rohithmariyala.com/}{\underline{Working Demo}} $|$ \href{https://github.com/mrohith29/policy-agent-ai}{\underline{View in GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a secure, AI-powered chatbot leveraging \textbf{Google's Gemini API} to extract insights and answer queries
+from complex documents (PDF, DOCX, PPTX).}
+            \resumeItem{Integrated advanced \textbf{natural language understanding} to deliver accurate, context-aware responses for legal and
+policy content.}
+            \resumeItem{Implemented \textbf{Supabase authentication} for user session tracking, enabling personalized, \textbf{multi-session}
+experiences with persistent chat histories.}
+%             \resumeItem{Delivered a \textbf{responsive frontend} using React to ensure smooth, device-friendly interactions and seamless file
+% uploads.}
+          \resumeItemListEnd
+
+      \resumeSubheading
+          {\textbf{Focus Center} $-$ \emph{Python, FastAPI, React, PostgreSQL, Google-genai, Streamlit}}{}
+          {\href{https://github.com/mrohith29/focuscenter}{\underline{View in GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Building a real-time \textbf{Agentic AI} powered productivity and focus tracker to help individuals and teams monitor task flow, eliminate
+distractions, and stay aligned with goals.}
+            \resumeItem{Designed a \textbf{modular backend} with \textbf{AI-Agent Orchestration}, and \textbf{component-driven React frontend}
+respectively, featuring real-time updates, timer-based task blocks, and performance insights.}
+            \resumeItem{Focused on clean design and performance to \textbf{simulate a real SaaS} production environment, laying the
+groundwork for future deployment and monetization.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Cisco Certified Network Associate (CCNA)}{: \href{https://drive.google.com/file/d/1wCV7-IH-f1qnhPlDC2jvOVMLz-ArSnE_/view?usp=drive_link}{\underline{ITN}} $|$ \href{https://drive.google.com/file/d/16yDo57tartRLrWKmRFyMOEwIofTASWcK/view?usp=drive_link}{\underline{SRWE}} $|$ \href{https://drive.google.com/file/d/1rlNiAEXCwK30Wbv3Z9H53Iug_aOqiONm/view?usp=drive_link}{\underline{ENSA}}} \\
+     \textbf{\href{https://drive.google.com/file/d/1cV2_Hu_rJRvmrQlsOAxoADrXa_cuHFZP/view?usp=drive_link}{AWS Cloud Virtual Internship}}{: \href{https://drive.google.com/file/d/1Z3zcKnKXHXzszDB3Vob-BS4JztV7v_l2/view?usp=drive_link}{\underline{Cloud Foundations}} $|$ \href{https://drive.google.com/file/d/1bKpaVXk6Qzx9F8GUdJhXjNgAYRpMt8Wn/view?usp=drive_link}{\underline{Cloud Architecture}}}
+    }}
+ \end{itemize}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, SQL (Postgres), JavaScript, HTML/CSS} \\
+     \textbf{Frameworks \& Libraries}{: React, Flask, FastAPI, Agent Development Kit, LangChain, Astro} \\
+     \textbf{Developer Tools}{: Git, Docker, AWS(Registrar, Route 53), Google Cloud Platform, Supabase, CLI, CI/CD} \\
+     \textbf{Concepts}{: Object Oriented Programming, Agile, Machine Learning, Data Structures and Algorithms, RESTful API} \\
+     \textbf{Languages Spoken}{: English, Telugu, Hindi}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
